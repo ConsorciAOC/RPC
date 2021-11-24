@@ -1,4 +1,4 @@
-# RPC - Registre Públic de Contractes de la Generalitat (integració via PCI)**
+# RPC - Registre Públic de Contractes de la Generalitat (integració via PCI)
 
 # **Document d&#39;integració del servei**
 
