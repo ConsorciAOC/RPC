@@ -8,7 +8,17 @@
 | --- | --- | --- | --- |
 | V1.0 | 01/03/2017 | Òscar Trapote | Creació del document |
 
-# 1 Introducció
+- [1. Introducció](#1)
+- [2. Transmissions de dades disponibles](#2)
+- [3. Missatgeria dels serveis](#3)
+   * [3.1. Missatgeria especifica RPC@PCI vs RPC@RPC](#3.1)
+        * [3.1.1 Petició – dades específiques](#3.1.1)
+        * [3.1.2 Petició – enviament de documents](#3.1.2)
+		* [3.1.3 Resposta – dades específiques](#3.1.3)
+- [ANNEX 1 – Guia d&#39;integració del servei RPC](#ANNEX1)
+- [ANNEX 2 – Exemples de petició](#ANNEX2)
+
+# 1 Introducció <a name="1"></a>
 
 Aquest document detalla els aspectes a tenir en compte al realitzar la integració amb els serveis oferts pel RPC (Registre Públic de Contractes) a través de la plataforma PCI.
 
@@ -21,7 +31,7 @@ Per poder realitzar la integració cal conèixer prèviament la següent documen
 [RPC]:https://github.com/ConsorciAOC/RPC/tree/main/Manual%20d%E2%80%99integraci%C3%B3%20RPC
 
 
-# 2 Transmissions de dades disponibles
+# 2 Transmissions de dades disponibles <a name="2"></a>
 
 Les dades disponibles a través del servei són les que es presenten a continuació:
 
@@ -44,13 +54,13 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 | RPC | PROVES | - |
 
 
-# 3 Missatgeria dels serveis
+# 3 Missatgeria dels serveis <a name="3"></a>
 
 La missatgeria del la modalitat de consum segueix la especificació de la missatgeria recollida al document [RPC-Manual_integradors_ws_serveisRPC-v3.4.pdf][RPC] proporcionat pel equip de suport a la integració del servei RPC del Departament d&#39;Economia. Aquest document haurà de ser consultat per a conèixer gramàtica i codificació dels camps a l&#39;hora de construir les peticions.
 
 A continuació es documenten les variacions que s&#39;han introduït respecte a la missatgeria del servei esmentat per adaptar-la a l&#39;àmbit de la PCI.
 
-## 3.1 Missatgeria especifica RPC@PCI vs RPC@RPC
+## 3.1 Missatgeria especifica RPC@PCI vs RPC@RPC <a name="3.1"></a>
 
 Tot i que s&#39;ha emprat com a base la missatgeria del servei RPC, s&#39;ha creat una versió &quot;còpia&quot; d&#39;aquesta per a poder introduir variacions allà a on es pot aprofitar elements de la PCI per a abstraure els integradors d&#39;aspectes repetitius o tècnicament feixucs de la integració amb el sistema RPC.
 
@@ -60,7 +70,7 @@ PETICIO http://cat.aoc/rpc/peticion
 
 RESPOSTA http://cat.aoc/rpc/respuesta
 
-### 3.1.1 Petició – dades específiques
+### 3.1.1 Petició – dades específiques <a name="3.1.1"></a>
 
 La estructura del missatge es mostra a la següent il.lustració:
 
@@ -86,7 +96,7 @@ Altres camps rellevants que sí han de ser informats pel integrador es descriuen
 | /comunicacio/atributs/peticionari/identificadorPeticionari | Identificador de l&#39;usuari que realitza la petició o la persona responsable. |
 | /comunicacio/atributs/peticionari/sistemaPeticionari | Identificador de la aplicació o sistema que origina la petició, com per exemple GEEC, TEEC, DESAL, ....<br><br>Aquest identificador ha d&#39;existir a la base de dades del RPC, pel que s&#39;haurà de contactar amb l&#39;equip de suport de RPC per a fer aquesta gestió. |
 
-### 3.1.2 Petició – enviament de documents
+### 3.1.2 Petició – enviament de documents <a name="3.1.2"></a>
 
 A la versió 3.4 del servei RPC s&#39;ofereixen tres mecanismes per a fer arribar la documentació adjunta:
 
@@ -113,7 +123,7 @@ Com es pot veure a la il·lustració, es poden donar dos grans casos:
 
 La resta de la missatgeria de petició es descriu de manera detallada a la guia d&#39;integració del servei RPC del Departament d&#39;Economia de la Generalitat de Catalunya, secció 4.1, pàgina 12.
 
-### 3.1.3 Resposta – dades específiques
+### 3.1.3 Resposta – dades específiques <a name="3.1.3"></a>
 
 La resposta del servei RPC@PCI és idèntica a la del servei RPC@RPC
 
@@ -125,12 +135,12 @@ http://cat.aoc/rpc/resposta
 
 Per a una descripció detallada de la missatgeria de resposta, consulteu la guia d&#39;integració del servei RPC del Departament d&#39;Economia de la Generalitat de Catalunya, secció 4.2, pàgina 68.
 
-# ANNEX 1 – Guia d&#39;integració del servei RPC
+# ANNEX 1 – Guia d&#39;integració del servei RPC <a name="ANNEX1"></a>
 
 A continuació trobareu [la guia d&#39;integració del servei RPC per a la versió sobre la que s&#39;ha desenvolupat aquesta modalitat de consum.][RPC]
 
 
-# ANNEX 2 – Exemples de petició
+# ANNEX 2 – Exemples de petició <a name="ANNEX2"></a>
 
 Recomanem la consulta del darrer fitxer de proves de en format soap-ui, on hi haurà plasmats exemples representatius:
 
