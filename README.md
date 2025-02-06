@@ -7,14 +7,6 @@
 >  
 > Davant aquest escenari, us recomanem valorar la implementació de la integració del vostre gestor d'expedients amb el servei REST de la PSCP, que us permetrà el traspàs de dades de manera automàtica, cap a les dues eines, un cop s'hagi posat en marxa aquesta funcionalitat.
 
-<div style="border-left: 4px solid red; padding: 10px; background-color: #ffe6e6;">
-<strong>❗ Atenció:</strong><br>
-Atesa la futura discontinuïtat del servei d'integració del Registre Públic de Contractes (RPC), que es farà efectiva a partir de la implantació de la funcionalitat d'integració de la Plataforma de Serveis de Contractació Pública (PSCP) amb aquest servei, no s'ofereix la possibilitat de desenvolupament de noves integracions amb aquest webservices.<br><br>
-Properament, en previsió durant 2025, serà la PSCP l'eina que faci efectiu el traspàs de dades, de manera automàtica, cap al RPC, de manera que deixarà de ser efectiva la integració directa dels gestors d'expedients de contractació cap a aquesta eina. Aquest fet motivarà la seva discontinuïtat a futur.<br><br>
-Davant aquest escenari, us recomanem valorar la implementació de la integració del vostre gestor d'expedients amb el servei REST de la PSCP, que us permetrà el traspàs de dades de manera automàtica, cap a les dues eines, un cop s'hagi posat en marxa aquesta funcionalitat.
-</div>
-
-
 
 # **Document d&#39;integració del servei**
 
