@@ -37,7 +37,7 @@ Per poder realitzar la integració cal conèixer prèviament la següent documen
 - [Document d&#39;Integració del servei RPC del Departament d&#39;Economia.][RPC]
 
 [PCI]:https://github.com/ConsorciAOC/PCI
-[RPC]:https://github.com/ConsorciAOC/RPC/tree/main/Manual%20d%E2%80%99integraci%C3%B3%20RPC
+[RPC]:https://github.com/ConsorciAOC/RPC/blob/main/Manual%20d%E2%80%99integraci%C3%B3%20RPC/RPC-Manual_integradors_ws_serveisRPC-v4.17.docx?raw=true
 
 
 # 2 Transmissions de dades disponibles <a name="2"></a>
